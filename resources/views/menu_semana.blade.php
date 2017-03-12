@@ -110,7 +110,10 @@
 
     appMenu.controller("controllerMenu", function($scope,$http){
 
-        
+        &scope.init = function(){
+            $scope.item = { };
+
+        };
 
     });
 
