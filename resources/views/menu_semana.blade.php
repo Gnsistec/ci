@@ -129,7 +129,7 @@
             });
 
             document.getElementById("datpick").blur();
-            
+
             $(".select2").select2();
         });
 
