@@ -906,7 +906,8 @@
         });
 
     </script>
-
+    <script type="text/javascript"
+            src="{{ asset("js/ci_plugin/form-validator/jquery.form-validator.min.js")}}"></script>
 
     <script>
         $.validate({

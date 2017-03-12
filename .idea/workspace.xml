@@ -23,11 +23,11 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="ficha_inscripcion.blade.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ficha_inscripcion.blade.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/views/ficha_inscripcion.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-506">
-              <caret line="10" column="34" lean-forward="true" selection-start-line="10" selection-start-column="34" selection-end-line="10" selection-end-column="34" />
+            <state relative-caret-position="164">
+              <caret line="910" column="0" lean-forward="true" selection-start-line="910" selection-start-column="0" selection-end-line="910" selection-end-column="0" />
               <folding>
                 <element signature="e#50959#50984#0#HTML" expanded="true" />
               </folding>
@@ -35,11 +35,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="admin_template_plugins.blade.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="admin_template_plugins.blade.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/vendor/crocodicstudio/crudbooster/src/views/admin_template_plugins.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="248">
-              <caret line="87" column="89" lean-forward="true" selection-start-line="87" selection-start-column="89" selection-end-line="87" selection-end-column="89" />
+            <state relative-caret-position="358">
+              <caret line="92" column="4" lean-forward="false" selection-start-line="92" selection-start-column="4" selection-end-line="92" selection-end-column="4" />
               <folding />
             </state>
           </provider>
@@ -503,12 +503,12 @@
       <workItem from="1488025517053" duration="23910000" />
       <workItem from="1488132782883" duration="91962000" />
       <workItem from="1488659491499" duration="2074000" />
-      <workItem from="1489109842459" duration="30887000" />
+      <workItem from="1489109842459" duration="31219000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="168776000" />
+    <option name="totallyTimeSpent" value="169108000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -933,14 +933,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/crocodicstudio/crudbooster/src/views/admin_template_plugins.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="248">
-          <caret line="87" column="89" lean-forward="true" selection-start-line="87" selection-start-column="89" selection-end-line="87" selection-end-column="89" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/vendor/crocodicstudio/crudbooster/src/views/admin_template.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-2758">
@@ -951,11 +943,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/ficha_inscripcion.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-506">
-          <caret line="10" column="34" lean-forward="true" selection-start-line="10" selection-start-column="34" selection-end-line="10" selection-end-column="34" />
+        <state relative-caret-position="164">
+          <caret line="910" column="0" lean-forward="true" selection-start-line="910" selection-start-column="0" selection-end-line="910" selection-end-column="0" />
           <folding>
             <element signature="e#50959#50984#0#HTML" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/crocodicstudio/crudbooster/src/views/admin_template_plugins.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="358">
+          <caret line="92" column="4" lean-forward="false" selection-start-line="92" selection-start-column="4" selection-end-line="92" selection-end-column="4" />
+          <folding />
         </state>
       </provider>
     </entry>
