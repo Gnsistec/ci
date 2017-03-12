@@ -4,7 +4,7 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class ModMenu extends Model
+class Menu extends Model
 {
     protected $table='menu';
     protected $primaryKey='id';

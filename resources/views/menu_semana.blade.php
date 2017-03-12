@@ -108,8 +108,9 @@
         $interpolateProvider.endSymbol(']]');
     });
 
-    appMenu.controller("controllerMenu", function($scope){
+    appMenu.controller("controllerMenu", function($scope,$http){
 
+        
 
     });
 

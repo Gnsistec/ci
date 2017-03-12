@@ -57,7 +57,8 @@ class AdminMenuSemanaController extends Controller
      */
     public function edit($id)
     {
-        //
+        $menu = Menu::findOrFail($id);
+        return view("menu_semana", ["menu"=>$menu]);
     }
 
     /**

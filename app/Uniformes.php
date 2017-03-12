@@ -4,7 +4,7 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class ModUniformes extends Model
+class Uniformes extends Model
 {
 
 
