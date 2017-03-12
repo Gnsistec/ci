@@ -1,9 +1,9 @@
 @extends("crudbooster::admin_template")
 @section("content")
 
+    <script src="{{asset('bower_resources/angular/angular.js')}}"></script>
 
-
-    <div class="box">
+    <div class="box" ng-app="MyApp" ng-controller="controllerMenu" >
 
 
         <!-- /.box-header -->
@@ -85,11 +85,11 @@
                         </td>
                     </tr>
                     <tr>
-                        <td style="background-color: #f9f9f9">Nombre:
+                        <td style="background-color: #f9f9f9">Nombre: [[nombre]]
                             <div class="form-group">
                                 <input type="text" class="form-control" style="border: none; margin-top: 5px"
                                        placeholder=""
-                                       id="id_nombre">
+                                       id="id_nombre" ng-model="nombre">
                             </div>
                         </td>
                         <td style="background-color: #f9f9f9">Apellido:
@@ -861,7 +861,7 @@
                                 </div>
                                 <div class="col-md-2">
                                     <input class="btn btn-default form-control" type="button" id="buscar"
-                                           value="Buscar Domicilio" onClick="buscar()"/>
+                                           value="Buscar Domicilio" onClick="buscaDom()"/>
                                 </div>
                             </div>
                         </td>
@@ -889,21 +889,34 @@
 
     </div>
     <!-- /.box -->
+    <script >
+          var app = angular.module('MyApp',[], function($interpolateProvider) {
+            $interpolateProvider.startSymbol('[[');
+            $interpolateProvider.endSymbol(']]');
+        });
 
-    <script type="text/javascript"
-            src="{{ asset("js/ci_plugin/form-validator/jquery.form-validator.min.js")}}"></script>
+        app.controller("controllerMenu", function($scope){
+
+            $scope.init = function(){
+                $scope.item = { };
+                $scope.lunes_desalluno="Local";
+            };
+
+
+        });
+
+    </script>
+
 
     <script>
         $.validate({
             lang: 'es'
         });
-
-
     </script>
-    <script type="text/javascript">
 
+    <script type="application/javascript">
 
-        function buscar() {
+        function buscaDom() {
             alert("si cogio");
             GMaps.geocode({
                 address: $('#geo').val(),
@@ -921,6 +934,9 @@
                 }
             });
         }
+    </script>
+
+    <script type="text/javascript">
 
         function dibujarRuta(lat_dest, lng_dest) {
             map.cleanRoute();
@@ -1027,13 +1043,14 @@
                 title: 'Marker with InfoWindow',
                 infoWindow: {
                     content: '<div><center><p>Mariana de Jesús OE7-02 ' +
-                    'y Nuño de Valderrama. <br> Edificio CITIMED, Piso 6, oficina #638 <br>Quito-Ecuador <br>CP: 170147 </p><img src="TNR_6902.JPG"/></center></div>'
+                    'y Nuño de Valderrama. <br> Edificio CITIMED, Piso 6, oficina #638 <br>Quito-Ecuador <br>CP: 170147 </p><img src="{{asset('tmp/58b66d41a3908_Saludv2.png')}}"/></center></div>'
 
                 }
             });
         });
 
     </script>
+
 
     <script type="text/javascript" src="{{ asset("js/ci_plugin/slim_crop/slim/slim.kickstart.min.js")}}"></script>
 

@@ -2,9 +2,12 @@
 @section("content")
 
 
+   <!-- <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>-->
     <script src="{{asset('bower_resources/angular/angular.js')}}"></script>
 
-    <div class="box" ng-app="appMenu" ng-controller="controllerMenu" >
+    <div class="box" ng-app="MyApp" ng-controller="controllerMenu" >
+
+
         <!-- /.box-header -->
         <div class="box-body">
             <table class="table table-bordered">
@@ -37,8 +40,9 @@
                         <br>
                         <label>Desayuno:</label>
                         <textarea class="form-control" id="id_lun_des"
-                                  style="border: none; width: 98%; height: 100px;  margin-top: 5px"></textarea>
-                        <label>Almuerzo:</label>
+                                  style="border: none; width: 98%; height: 100px;  margin-top: 5px" ng-model="lunes"></textarea>
+                        <label>Almuerzo:  [[lunes]]</label>
+
                         <textarea class="form-control" id="id_lun_alm"
                                   style="border: none; width: 98%; height: 100px;  margin-top: 5px"></textarea>
                     </td>
@@ -101,42 +105,45 @@
     </div>
     <!-- /.box -->
 
-    <script>
+    <script >
 
-    var appMenu = angular.module("appMenu",[],function ($interpolateProvider) {
-        $interpolateProvider.startSymbol('[[');
-        $interpolateProvider.endSymbol(']]');
-    });
-
-    appMenu.controller("controllerMenu", function($scope,$http){
-
-        &scope.init = function(){
-            $scope.item = { };
-
-        };
-
-    });
-
-
-    </script>
-
-
-    <script>
-
-        $(function () {
-            $('#datpick').fdatepicker({
-
-                format: 'dd-mm-yyyy',
-                disableDblClickSelection: true,
-                leftArrow: '<<',
-                rightArrow: '>>'
-            });
-
-            document.getElementById("datpick").blur();
-
-            $(".select2").select2();
+        var app = angular.module('MyApp',[], function($interpolateProvider) {
+            $interpolateProvider.startSymbol('[[');
+            $interpolateProvider.endSymbol(']]');
         });
 
+    app.controller("controllerMenu", function($scope){
+
+        $scope.init = function(){
+            $scope.item = { };
+            $scope.lunes_desalluno="Local";
+        };
+
+
+    });
+
     </script>
+<script>
+
+$(function () {
+    $('#datpick').fdatepicker({
+
+        format: 'dd-mm-yyyy',
+        disableDblClickSelection: true,
+        leftArrow: '<<',
+        rightArrow: '>>'
+    });
+
+    document.getElementById("datpick").blur();
+
+    $(".select2").select2();
+});
+
+
+
+    </script>
+
+
+
 
 @endsection

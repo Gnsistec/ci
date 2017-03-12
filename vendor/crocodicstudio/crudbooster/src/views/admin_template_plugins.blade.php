@@ -49,8 +49,8 @@
 	<script src="{{ asset ('vendor/crudbooster/assets/adminlte/plugins/datatables/dataTables.bootstrap.min.js')}}"></script>
 
 	<!--SELECT 2-->
-	<script src="{{asset('vendor/crudbooster/assets/select2/dist/js/select2.js')}}"></script>
 	<link rel="stylesheet" type="text/css" href="{{asset('vendor/crudbooster/assets/select2/dist/css/select2.min.css')}}">
+
 
 	<script>			
 		var ASSET_URL           = "{{asset('/')}}";
@@ -83,13 +83,14 @@
 
 	<!--PLUGIN GOOGLE MAP-->
 	<script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?key=AIzaSyCTuazTT4ftRrTOscHQYPabgJPLiBS9YXc
-                     &sensor=true&region=ES&callback=initialize"></script>
+                     &region=ES&callback=initialize"></script>
 
 	<script type="text/javascript" src="{{asset("js/ci_plugin/map/gmaps.js")}}"></script>
 
 	<!--VALIDATOR-->
 	<link href="//cdnjs.cloudflare.com/ajax/libs/jquery-form-validator/2.2.8/theme-default.min.css"
 		  rel="stylesheet" type="text/css" />
+	<script src="//cdnjs.cloudflare.com/ajax/libs/jquery-form-validator/2.3.26/jquery.form-validator.min.js"></script>
 
 	<!--PLUGIN DROPZONE-->
 

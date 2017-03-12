@@ -13,7 +13,7 @@
     
     <!-- Theme style -->
     <link href="{{ asset("vendor/crudbooster/assets/adminlte/dist/css/AdminLTE.min.css")}}" rel="stylesheet" type="text/css" />    
-    <link href="{{ asset("vendor/crudbooster/assets/adminlte/dist/css/skins/_all-skins.min.css")}}" rel="stylesheet" type="text/css" />      
+    <link href="{{ asset("vendor/crudbooster/assets/adminlte/dist/css/skins/_all-skins.min.css")}}" rel="stylesheet" type="text/css" />
 
     <!-- load js -->
     <script type="text/javascript">
@@ -155,5 +155,6 @@
 <!-- Optionally, you can add Slimscroll and FastClick plugins.
       Both of these plugins are recommended to enhance the
       user experience -->
+<script src="{{asset('vendor/crudbooster/assets/select2/dist/js/select2.js')}}"></script>
 </body>
 </html>

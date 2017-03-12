@@ -1,9 +1,9 @@
 @extends("crudbooster::admin_template")
 @section("content")
 
+    <script src="{{asset('bower_resources/angular/angular.js')}}"></script>
 
-
-    <div class="box">
+    <div class="box" ng-app="MyApp" ng-controller="controllerMenu" >
         <!-- /.box-header -->
         <div class="box-body">
             <table class="table table-bordered">
@@ -43,9 +43,9 @@
                                             <label>Doctor:</label>
                                             <div class="form-group">
                                                 <input type="text" class="form-control" placeholder=""
-                                                       id="id_doctor">
+                                                       id="id_doctor" ng-model="lunes">
                                             </div>
-
+                                        [[lunes]]
                                     </div>
                                 </div>
 
@@ -136,6 +136,25 @@
     <!-- /.box -->
 
 
+
+    <script >
+
+        var app = angular.module('MyApp',[], function($interpolateProvider) {
+            $interpolateProvider.startSymbol('[[');
+            $interpolateProvider.endSymbol(']]');
+        });
+
+        app.controller("controllerMenu", function($scope){
+
+            $scope.init = function(){
+                $scope.item = { };
+                $scope.lunes_desalluno="Local";
+            };
+
+            $(".select2").select2();
+        });
+
+    </script>
 
     <script>
 
