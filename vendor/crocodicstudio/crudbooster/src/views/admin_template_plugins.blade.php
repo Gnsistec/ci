@@ -72,7 +72,6 @@
 
 	<!--CI_CUSTOM_PLUGIN-->
 
-
 	<!--PLUGIN CALENDARIO-->
 	<script type="text/javascript" src="{{asset("js/ci_plugin/calendar/js/foundation-datepicker.js")}}"></script>
 	<script type="text/javascript" src="{{asset("js/ci_plugin/calendar/js/locales/foundation-datepicker.vi.js")}}"></script>
@@ -90,10 +89,9 @@
 	<!--VALIDATOR-->
 	<link href="//cdnjs.cloudflare.com/ajax/libs/jquery-form-validator/2.2.8/theme-default.min.css"
 		  rel="stylesheet" type="text/css" />
-	
+
 
 	<!--PLUGIN DROPZONE-->
-
 	<script type="text/javascript" src="{{asset("js/ci_plugin/load-multiple-image/dropzone.js")}}"></script>
 
 
