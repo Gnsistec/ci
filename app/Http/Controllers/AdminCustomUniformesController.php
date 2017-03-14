@@ -45,6 +45,7 @@ class AdminCustomUniformesController extends Controller
             response()->json(['errors'=>array(['code'=>422,'message'=>'Revise los datos en el json faltan elementos '])],422);
         }
 
+
           $slimArray =  procesarImagen();
           $array = json_decode( $slimArray,true);
           $nombreImage = $array['name'];

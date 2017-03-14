@@ -1,7 +1,7 @@
 <?php
 
 namespace App\Http\Controllers;
-
+use App\ModMenu;
 use Illuminate\Http\Request;
 
 class AdminMenuSemanaController extends Controller
@@ -35,7 +35,23 @@ class AdminMenuSemanaController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $menu =  new ModMenu;
+        $menu->lun_des = $request->get('lun_des');
+        $menu->lun_alm = $request->get('lun_alm');
+        $menu->mar_des = $request->get('mar_des');
+        $menu->mar_alm = $request->get('mar_alm');
+        $menu->mie_des = $request->get('mie_des');
+        $menu->mie_alm = $request->get('mie_alm');
+        $menu->jue_des = $request->get('jue_des');
+        $menu->jue_alm = $request->get('jue_alm');
+        $menu->vie_des = $request->get('vie_des');
+        $menu->vie_alm = $request->get('vie_alm');
+
+       $response =  $menu->save();
+
+        return response()->json([
+            "response"=>$response,
+            "cita"=>$menu]);
     }
 
     /**
